@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/navigation_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.google.android.gms.maps.MapView>
+
+    <FrameLayout
+        android:id="@+id/navigation_frame_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35px"
+        android:layout_marginTop="20px">
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/navigation_edit_search"
+            android:layout_width="560px"
+            android:layout_height="95px"
+            android:background="@drawable/rectangle_search_nav"
+            android:drawableStart="@drawable/ic_search_enabled_small_grey"
+            android:drawablePadding="20px"
+            android:paddingStart="35px"
+            android:hint="@string/search"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_1"
+            android:textSize="24px"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:popupElevation="0dp"/>
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/navigation_button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35px"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_x_search"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/navigation_button_navigate"
+        android:layout_width="95px"
+        android:layout_height="95px"
+        android:background="@drawable/button_blue_round"
+        android:src="@drawable/ic_navigate"
+        android:layout_toRightOf="@+id/navigation_frame_search"
+        android:layout_marginStart="35px"
+        android:layout_marginTop="20px"
+        android:visibility="gone"/>
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/navigation_button_cancel"
+        android:layout_width="95px"
+        android:layout_height="95px"
+        android:background="@drawable/button_grey_round"
+        android:src="@drawable/ic_cancel"
+        android:layout_toRightOf="@+id/navigation_frame_search"
+        android:layout_marginStart="35px"
+        android:layout_marginTop="20px"
+        android:visibility="gone"/>
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/navigation_button_myLocation"
+        android:layout_width="95px"
+        android:layout_height="95px"
+        android:background="@drawable/button_black_round"
+        android:src="@drawable/ic_location"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35px"
+        android:layout_marginBottom="20px"/>
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/usbradio_text_song"
+        android:layout_width="320px"
+        android:layout_height="100px"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="35px"
+        android:textColor="@color/black_1"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="72px"
+        app:autoSizeMinTextSize="18px" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/usbradio_text_artist"
+        android:layout_width="320px"
+        android:layout_height="45px"
+        android:layout_below="@+id/usbradio_text_song"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="25px"
+        android:textColor="@color/black_6"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="30px"
+        app:autoSizeMinTextSize="18px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/usbradio_text_album"
+        android:layout_width="320px"
+        android:layout_height="45px"
+        android:layout_below="@+id/usbradio_text_artist"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128px"
+        android:textColor="@color/black_6"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="30px"
+        app:autoSizeMinTextSize="18px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/usbradio_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270px"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="390px"
+        android:textColor="@color/grey_1"
+        android:textAlignment="textEnd"/>
+
+    <SeekBar
+        android:id="@+id/usbradio_seekbar"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usbradio_text_album"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="50px"
+        android:thumb="@drawable/thumb"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:paddingStart="0px"
+        android:paddingEnd="0px"
+        android:thumbOffset="0px"
+        android:progress="0" />
+
+    <ImageView
+        android:id="@+id/usbradio_image_artwork"
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300px"
+        android:src="@drawable/music" />
+
+    <RelativeLayout
+        android:layout_width="120px"
+        android:layout_height="420px"
+        android:background="@drawable/button_grey3_25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sound_small"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"/>
+
+        <FrameLayout
+            android:layout_width="60px"
+            android:layout_height="290px"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px">
+
+            <SeekBar
+                android:id="@+id/usbradio_seekbar_volume"
+                android:layout_width="290px"
+                android:layout_height="60px"
+                android:thumb="@drawable/thumb_big"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:paddingStart="0px"
+                android:paddingEnd="0px"
+                android:thumbOffset="0px"
+                android:layout_gravity="center"
+                android:rotation="270"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usbradio_image_artwork"
+        android:layout_marginTop="100px"
+        android:layout_marginStart="128px"
+        android:layout_marginEnd="300px"
+        android:orientation="horizontal">
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/usbradio_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_back" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/usbradio_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_play" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/usbradio_button_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_next" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/usbradio_button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_enabled" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/usbradio_relative_nextSong"
+        android:layout_width="945px"
+        android:layout_height="100px"
+        android:background="@drawable/list_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/usbradio_text_upNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/up_next"
+            android:layout_marginStart="70px"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black_1"
+            android:textSize="30px"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/usbradio_text_nextSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/usbradio_text_upNext"
+            android:textColor="@color/black_1"
+            android:layout_marginStart="35px"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usbradio_relative_slideView"
+        android:layout_width="945px"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_bg"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45px"
+            android:layout_marginTop="25px">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/usbradio_edit_search"
+                android:layout_width="430px"
+                android:layout_height="70px"
+                android:background="@drawable/rectangle_search"
+                android:drawableStart="@drawable/ic_search_enabled_small"
+                android:drawablePadding="20px"
+                android:paddingStart="35px"
+                android:hint="@string/search"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_1"
+                android:textSize="24px"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"/>
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/usbradio_button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35px"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ic_x_search"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/usbradio_button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45px"
+            android:layout_marginEnd="45px"
+            android:background="@drawable/ic_x" />
+
+        <FrameLayout
+            android:id="@+id/usbradio_frame_sortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/usbradio_recycler_songs"
+            android:layout_marginStart="45px"
+            android:layout_marginBottom="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/usbradio_button_sortName"
+                android:layout_width="280px"
+                android:layout_height="55px"
+                android:layout_alignTop="@+id/usbradio_frame_sortName"
+                android:background="@drawable/button_black_50"
+                android:paddingStart="40px"
+                android:stateListAnimator="@null"
+                android:text="@string/name"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/usbradio_image_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="235px"
+                android:background="@drawable/ic_down" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/usbradio_frame_sortArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/usbradio_recycler_songs"
+            android:layout_toRightOf="@+id/usbradio_frame_sortName"
+            android:layout_marginStart="25px"
+            android:layout_marginBottom="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/usbradio_button_sortArtist"
+                android:layout_width="280px"
+                android:layout_height="55px"
+                android:background="@drawable/button_black_50"
+                android:paddingStart="40px"
+                android:stateListAnimator="@null"
+                android:text="@string/artist"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/usbradio_image_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="235px"
+                android:background="@drawable/ic_down" />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/usbradio_recycler_songs"
+            android:scrollbars="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="855px"
+            android:layout_height="400px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

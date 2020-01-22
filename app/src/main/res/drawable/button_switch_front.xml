@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/button_blue_round" />
+            <item
+                android:drawable="@drawable/ic_front_screen_white"
+                android:width="67px" android:height="53px"
+                android:gravity="center_vertical|center_horizontal" />
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@drawable/button_grey_round" />
+            <item
+                android:drawable="@drawable/ic_front_screen"
+                android:width="67px" android:height="53px"
+                android:gravity="center_vertical|center_horizontal" />
+        </layer-list>
+    </item>
+
+</selector>

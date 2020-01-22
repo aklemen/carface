@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linear_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px">
+
+            <com.example.carface.MyLogSwitch
+                android:id="@+id/switch_front"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:background="@drawable/button_switch_front"
+                android:src="@drawable/ic_front_screen"
+                android:layout_marginEnd="50px"
+                android:thumb="@null"/>
+
+            <com.example.carface.MyLogSwitch
+                android:id="@+id/switch_circulation"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:background="@drawable/button_switch_around"
+                android:src="@drawable/ic_around"
+                android:layout_marginEnd="50px"
+                android:thumb="@null"
+                android:checked="true"/>
+
+            <com.example.carface.MyLogSwitch
+                android:id="@+id/switch_rear"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:background="@drawable/button_switch_rear"
+                android:src="@drawable/ic_rear_screen"
+                android:thumb="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80px"
+            android:layout_marginStart="90px">
+
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_plusLeft"
+                android:layout_width="210px"
+                android:layout_height="80px"
+                android:background="@drawable/button_grey1_50"
+                android:src="@drawable/ic_plus_medium"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_leftTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black_1"
+                android:text="21.5"
+                android:layout_gravity="center_horizontal"
+                android:textSize="72px"
+                android:layout_marginVertical="30px"/>
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_minusLeft"
+                android:layout_width="210px"
+                android:layout_height="80px"
+                android:background="@drawable/button_grey1_50"
+                android:src="@drawable/ic_minus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80px"
+            android:layout_marginEnd="90px"
+            android:layout_alignParentEnd="true">
+
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_plusRight"
+                android:layout_width="210px"
+                android:layout_height="80px"
+                android:background="@drawable/button_grey1_50"
+                android:src="@drawable/ic_plus_medium"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_rightTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black_1"
+                android:text="21.5"
+                android:layout_gravity="center_horizontal"
+                android:textSize="72px"
+                android:layout_marginVertical="30px"/>
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_minusRight"
+                android:layout_width="210px"
+                android:layout_height="80px"
+                android:background="@drawable/button_grey1_50"
+                android:src="@drawable/ic_minus"/>
+
+        </LinearLayout>
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/button_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_fan_zero"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_options"
+            android:layout_marginTop="80px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_fan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35px">
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_minusFan"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_grey_round"
+                android:src="@drawable/ic_minus_big"
+                android:layout_marginEnd="30px"/>
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/button_plusFan"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_grey_round"
+                android:src="@drawable/ic_plus_big"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/button_grey1_100"
+            android:paddingHorizontal="10px">
+
+            <com.example.carface.MyLogSwitch
+                android:id="@+id/switch_leftSeat"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_switch_leftseat"
+                android:src="@drawable/ic_front_screen"
+                android:layout_marginEnd="80px"
+                android:thumb="@null"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_black_100"
+                android:padding="10px"
+                android:layout_marginEnd="80px">
+
+                <com.example.carface.MyLogSwitch
+                    android:id="@+id/switch_window"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@drawable/button_switch_window"
+                    android:src="@drawable/ic_front_screen"
+                    android:layout_marginEnd="50px"
+                    android:thumb="@null"
+                    android:checked="true"/>
+
+                <com.example.carface.MyLogSwitch
+                    android:id="@+id/switch_head"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@drawable/button_switch_head"
+                    android:src="@drawable/ic_around"
+                    android:layout_marginEnd="50px"
+                    android:thumb="@null"/>
+
+                <com.example.carface.MyLogSwitch
+                    android:id="@+id/switch_legs"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@drawable/button_switch_legs"
+                    android:src="@drawable/ic_rear_screen"
+                    android:thumb="@null"/>
+
+            </LinearLayout>
+
+            <com.example.carface.MyLogSwitch
+                android:id="@+id/switch_rightSeat"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/button_switch_rightseat"
+                android:src="@drawable/ic_front_screen"
+                android:thumb="@null"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

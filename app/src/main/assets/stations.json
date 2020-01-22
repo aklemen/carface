@@ -1,0 +1,32 @@
+{"stations": [
+  {
+    "name":"Radio 1",
+    "frequency":"107.80",
+    "url":"http://live.radio1.si/Radio1"
+  },
+  {
+    "name":"Rock",
+    "frequency":"103.30",
+    "url":"http://stream.rockradio.si:9034/;stream.mp3"
+  },
+  {
+    "name":"Center",
+    "frequency":"102.40",
+    "url":"http://stream2.radiocenter.si/proxy/center2?mp=/center"
+  },
+  {
+    "name":"Radio 2",
+    "frequency":"100.60",
+    "url":"http://live3.infonetmedia.si:8000/Radio2"
+  },
+  {
+    "name":"Bob",
+    "frequency":"101.80",
+    "url":"http://live.radiobob.si/Europa05"
+  },
+  {
+    "name":"Antena",
+    "frequency":"105.20",
+    "url":"http://live.radioantena.si/Antena"
+  }
+]}

@@ -1,0 +1,9 @@
+{
+	"name": "Change_FM_station",
+	"recipient": "FMRadioFragment",
+	"property": "frequency",
+	"init": "105.20",
+	"target": "102.40",
+	"description": "Nastavi radijsko frekvenco na 102.40 MHz.",
+	"idApp": "id1"
+}

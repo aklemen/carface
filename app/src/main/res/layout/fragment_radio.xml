@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/radio_group_source"
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:checkedButton="@id/radio_button_fm">
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/radio_button_fm"
+            android:layout_width="226px"
+            android:layout_height="100px"
+            android:background="@drawable/button_radio_fm"
+            android:button="@null"/>
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/radio_button_usb"
+            android:layout_width="226px"
+            android:layout_height="100px"
+            android:layout_marginStart="35px"
+            android:layout_marginEnd="35px"
+            android:background="@drawable/button_radio_usb"
+            android:button="@null"/>
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/radio_button_bt"
+            android:layout_width="226px"
+            android:layout_height="100px"
+            android:background="@drawable/button_radio_bt"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/radio_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="620px"
+        android:layout_alignParentBottom="true" />
+    
+
+</RelativeLayout>

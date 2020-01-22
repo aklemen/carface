@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="210px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_3">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@id/main_button_ac">
+
+            <com.example.carface.MyLogRadioButton
+                android:id="@+id/main_button_ac"
+                android:layout_width="136px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/radiobutton_25"
+                android:button="@null"
+                android:foregroundGravity="center"
+                android:foreground="@drawable/ic_fan"/>
+
+            <com.example.carface.MyLogRadioButton
+                android:id="@+id/main_button_radio"
+                android:layout_width="136px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/radiobutton_25"
+                android:button="@null"
+                android:foregroundGravity="center"
+                android:foreground="@drawable/ic_radio"/>
+
+            <com.example.carface.MyLogRadioButton
+                android:id="@+id/main_button_navigation"
+                android:layout_width="136px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/radiobutton_25"
+                android:button="@null"
+                android:foregroundGravity="center"
+                android:foreground="@drawable/ic_navigation"/>
+
+            <com.example.carface.MyLogRadioButton
+                android:id="@+id/main_button_phone"
+                android:layout_width="136px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/radiobutton_25"
+                android:button="@null"
+                android:foregroundGravity="center"
+                android:foreground="@drawable/ic_phone"/>
+
+            <com.example.carface.MyLogRadioButton
+                android:id="@+id/main_button_settings"
+                android:layout_width="136px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@drawable/radiobutton_25"
+                android:button="@null"
+                android:foregroundGravity="center"
+                android:foreground="@drawable/ic_settings"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_placeholder"
+        android:layout_width="1070px"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

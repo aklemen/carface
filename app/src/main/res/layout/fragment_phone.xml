@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginStart="90px">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/phone_edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="115px"
+            android:background="@drawable/rectangle_search"
+            android:paddingStart="35px"
+            android:layout_marginBottom="75px"
+            android:hint="@string/dial_up"
+            android:textColor="@color/black_1"
+            android:textColorHint="@color/black_1"
+            android:textSize="36px"
+            android:textCursorDrawable="@null"
+            android:cursorVisible="false"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_1"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/one"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_2"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/two"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_3"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/three"
+                android:textSize="60px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_4"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/four"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_5"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/five"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_6"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/six"
+                android:textSize="60px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_7"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/seven"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_8"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/eight"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_9"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/nine"
+                android:textSize="60px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_star"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/star"
+                android:textSize="60px" />
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_0"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/zero"
+                android:textSize="60px"
+                android:drawableBottom="@drawable/ic_plus"
+                android:drawablePadding="0px"
+                android:paddingBottom="15px"
+                android:paddingTop="17px"/>
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_hashtag"
+                android:layout_marginStart="55px"
+                android:layout_height="116px"
+                android:layout_width="116px"
+                android:background="@drawable/button_grey_round"
+                android:textColor="@color/black_1"
+                android:text="@string/hashtag"
+                android:textSize="60px" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/phone_button_contacts"
+        android:layout_width="225px"
+        android:layout_height="115px"
+        android:background="@drawable/button_yellow_50"
+        android:src="@drawable/ic_contacts"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70px"
+        android:layout_marginEnd="145px"/>
+
+    <ImageView
+        android:id="@+id/phone_image_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_signal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="640px"
+        android:layout_marginBottom="470px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_name1"
+        android:textSize="36px"
+        android:textColor="@color/black_1"
+        android:layout_toRightOf="@id/phone_image_signal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="460px"
+        android:layout_marginStart="35px"
+        />
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/phone_button_call"
+        android:layout_width="225px"
+        android:layout_height="115px"
+        android:background="@drawable/button_green_50"
+        android:src="@drawable/ic_call"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginEnd="145px"
+        android:layout_above="@id/phone_button_mute"/>
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/phone_button_mute"
+        android:layout_width="225px"
+        android:layout_height="115px"
+        android:background="@drawable/button_grey_50"
+        android:src="@drawable/button_mute"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginEnd="145px"
+        android:layout_above="@id/phone_button_delete"
+        android:clickable="true"/>
+
+    <com.example.carface.MyLogImageButton
+        android:id="@+id/phone_button_delete"
+        android:layout_width="225px"
+        android:layout_height="115px"
+        android:background="@drawable/button_grey_50"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginEnd="145px"/>
+
+    <RelativeLayout
+        android:id="@+id/phone_relative_slideView"
+        android:layout_width="945px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:background="@drawable/list_bg"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45px"
+            android:layout_marginTop="25px">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/phone_edit_search"
+                android:layout_width="430px"
+                android:layout_height="70px"
+                android:background="@drawable/rectangle_search"
+                android:drawableStart="@drawable/ic_search_enabled_small"
+                android:drawablePadding="20px"
+                android:paddingStart="35px"
+                android:hint="@string/search"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_1"
+                android:textSize="24px"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"/>
+
+            <com.example.carface.MyLogImageButton
+                android:id="@+id/phone_button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35px"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ic_x_search"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/phone_button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45px"
+            android:layout_marginEnd="45px"
+            android:background="@drawable/ic_x" />
+
+        <FrameLayout
+            android:id="@+id/phone_frame_sortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_recycler_contacts"
+            android:layout_marginStart="45px"
+            android:layout_marginBottom="20px">
+
+            <com.example.carface.MyLogButton
+                android:id="@+id/phone_button_sortName"
+                android:layout_width="280px"
+                android:layout_height="55px"
+                android:layout_alignTop="@+id/phone_frame_sortName"
+                android:background="@drawable/button_blue_50"
+                android:paddingStart="40px"
+                android:stateListAnimator="@null"
+                android:text="@string/name"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="24px" />
+
+            <ImageView
+                android:id="@+id/phone_image_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="235px"
+                android:background="@drawable/ic_down" />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/phone_recycler_contacts"
+            android:scrollbars="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="855px"
+            android:layout_height="560px" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

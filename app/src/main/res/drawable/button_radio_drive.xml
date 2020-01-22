@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/button_blue_50" />
+            <item
+                android:drawable="@drawable/ic_drive"
+                android:gravity="center_vertical|center_horizontal" />
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@drawable/button_grey1_50" />
+            <item
+                android:drawable="@drawable/ic_drive"
+                android:gravity="center_vertical|center_horizontal" />
+        </layer-list>
+    </item>
+
+</selector>

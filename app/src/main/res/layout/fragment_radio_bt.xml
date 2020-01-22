@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btradio_text_song"
+        android:layout_width="320px"
+        android:layout_height="100px"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="35px"
+        android:textColor="@color/black_1"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="72px"
+        app:autoSizeMinTextSize="18px" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btradio_text_artist"
+        android:layout_width="320px"
+        android:layout_height="45px"
+        android:layout_below="@+id/btradio_text_song"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="25px"
+        android:textColor="@color/black_6"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="30px"
+        app:autoSizeMinTextSize="18px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btradio_text_album"
+        android:layout_width="320px"
+        android:layout_height="45px"
+        android:layout_below="@+id/btradio_text_artist"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128px"
+        android:textColor="@color/black_6"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="30px"
+        app:autoSizeMinTextSize="18px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btradio_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270px"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="390px"
+        android:textColor="@color/grey_1"
+        android:textAlignment="textEnd"/>
+
+    <SeekBar
+        android:id="@+id/btradio_seekbar"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btradio_text_album"
+        android:layout_marginStart="128px"
+        android:layout_marginTop="50px"
+        android:thumb="@drawable/thumb"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:paddingStart="0px"
+        android:paddingEnd="0px"
+        android:thumbOffset="0px"
+        android:progress="0" />
+
+    <ImageView
+        android:id="@+id/btradio_image_artwork"
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300px"
+        android:src="@drawable/music" />
+
+    <RelativeLayout
+        android:layout_width="120px"
+        android:layout_height="420px"
+        android:background="@drawable/button_grey3_25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sound_small"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"/>
+
+        <FrameLayout
+            android:layout_width="60px"
+            android:layout_height="290px"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px">
+
+            <SeekBar
+                android:id="@+id/btradio_seekbar_volume"
+                android:layout_width="290px"
+                android:layout_height="60px"
+                android:thumb="@drawable/thumb_big"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:paddingStart="0px"
+                android:paddingEnd="0px"
+                android:thumbOffset="0px"
+                android:layout_gravity="center"
+                android:rotation="270"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btradio_image_artwork"
+        android:layout_marginTop="100px"
+        android:layout_marginStart="128px"
+        android:layout_marginEnd="300px"
+        android:orientation="horizontal">
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/btradio_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_back" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/btradio_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_play" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/btradio_button_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160px"
+            android:background="@drawable/ic_next" />
+
+        <com.example.carface.MyLogImageButton
+            android:id="@+id/btradio_button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_disabled" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/btradio_group_phones"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@id/btradio_button_phone1"
+        android:layout_marginBottom="20px">
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/btradio_button_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="78px"
+            android:paddingHorizontal="35px"
+            android:layout_marginEnd="35px"
+            android:textSize="30px"
+            android:textAllCaps="false"
+            android:background="@drawable/radiobutton_50_green"
+            android:button="@null"
+            android:textColor="@color/button_color"
+            android:textAlignment="center"
+            android:text="@string/phone_name1"/>
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/btradio_button_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="78px"
+            android:paddingHorizontal="35px"
+            android:layout_marginEnd="35px"
+            android:textSize="30px"
+            android:textAllCaps="false"
+            android:background="@drawable/radiobutton_50_green"
+            android:button="@null"
+            android:textColor="@color/button_color"
+            android:textAlignment="center"
+            android:text="@string/phone_name2"/>
+
+        <com.example.carface.MyLogRadioButton
+            android:id="@+id/btradio_button_phone3"
+            android:layout_width="wrap_content"
+            android:layout_height="78px"
+            android:paddingHorizontal="35px"
+            android:textSize="30px"
+            android:textAllCaps="false"
+            android:background="@drawable/radiobutton_50_green"
+            android:button="@null"
+            android:textColor="@color/button_color"
+            android:textAlignment="center"
+            android:text="@string/phone_name3"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
